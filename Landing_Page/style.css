@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(1, 73, 133);
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+
+.material-symbols-outlined {
+ font-size: 10rem !important;
+}
+
+.lg_text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom:7px;
+}
+
+.sm_text {
+    font-size: 1.5rem;
+}
+
+#title {
+    position: relative;
+    display: inline-block; /* 커서위치 글자 사이즈만큼*/
+}
+
+#title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+
+#title.active::after {
+    display: none;
+}
