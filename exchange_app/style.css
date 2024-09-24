@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+Khojki&display=swap');
+
+* {margin:0; padding:0; box-sizing:border-box;}
+a, a:hover, a:focus, a:active {text-decoration:none;}
+body {font-family: "Noto Sans KR", sans-serif; font-optical-sizing:auto; font-weight:500; font-style: normal; background-color:#333;}
+ul li {list-style:none;}
+
+
+.wrapBg {
+    background: url(images/worldMap_img.png) no-repeat right bottom;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1280px;
+    height: 754px;
+    background-size:70%;
+    z-index: -11;
+}
+
+.wrap {
+    width:100%; 
+    padding-top:5%;
+}
+
+
+.title {
+    font-size:6em; 
+    text-align:center; 
+    margin-bottom:30px;
+    color:#fff;
+}
+
+.exchangeBox {
+    width:20%; 
+    margin:0 auto;
+    background-color: #fff;
+}
+
+.dropBtn {
+    background-color: #eee;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    text-align:center; 
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    border-bottom:1px solid #ddd;
+    
+}
+
+.dropdownList {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdownList li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdownList li:hover {
+    background-color: #f1f1f1
+}
+
+.dropDown:hover .dropdownList {
+    display: block;
+}
+
+.dropDown:hover .dropBtn {
+    background-color: #ddd;
+}
+
+.inputWrap {
+    width:100%;
+    padding:10px;
+}
+
+.inputWrap .amountBox {
+    width:100%; 
+    height:35px;
+    line-height:35px;
+    padding: 5px;
+    text-align:right;
+    border:1px solid #333;
+}
+
+.inputWrap .inputTxt {
+    font-size:14px; 
+    margin-top:5px;
+    color:#444; 
+    text-align:right;
+    border:1px solid #333;
+    height:35px;
+    line-height:35px;
+    padding:0 5px;
+    background-color: #fff;
+}
+
+.sameIcon {
+    margin:15px 0; 
+    text-align:center; 
+    font-size:30px; 
+    font-weight:400;
+    color:#ccc;
+}
+
+.flagImg {
+    width:8%;
+    height:8%;
+    margin-right:5px;
+    vertical-align: middle;    
+}

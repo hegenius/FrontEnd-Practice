@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExchangeApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="title">Exchange</h1>
+        <div class="exchangeBox">
+            <div class="dropDown">
+                <button class="dropBtn" id="fromButton">미국 USD</button>
+                <ul class="dropdownList" id="fromCurrencyList">
+                    <li id="USD"><img class="flagImg" src="images/usa_img.png" alt="미국 국기이미지"/>미국 USD</li>
+                    <li id="KRW"><img class="flagImg" src="images/kor_img.png" alt="한국 국기이미지"/>한국 KRW</li>
+                    <li id="CNY"><img class="flagImg" src="images/chi_img.png" alt="중국 국기이미지"/>중국 CNY</li>
+                    <li id="CHF"><img class="flagImg" src="images/swi_img.png" alt="스위스 국기이미지"/>스위스 CHF</li>
+                    <li id="VND"><img class="flagImg" src="images/vtm_img.png" alt="베트남 국기이미지"/>베트남 VND</li>
+                </ul>
+            </div>
+            <div class="inputWrap">
+                <input type="text" class="amountBox" id="fromInput" onkeyup="convert('from')" placeholder="금액을 입력하세요"/>
+                <div id="fromNumToKorea" class="inputTxt">달러</div>
+            </div>
+        </div>
+        <p class="sameIcon">=</p>
+        <div class="exchangeBox">
+            <div class="dropDown">
+                <button class="dropBtn" id="toButton">한국 KRW</button>
+                <ul class="dropdownList" id="toCurrencyList">
+                    <li id="USD"><img class="flagImg" src="images/usa_img.png" alt="미국 국기이미지"/>미국 USD</li>
+                    <li id="KRW"><img class="flagImg" src="images/kor_img.png" alt="한국 국기이미지"/>한국 KRW</li>
+                    <li id="CNY"><img class="flagImg" src="images/chi_img.png" alt="중국 국기이미지"/>중국 CNY</li>
+                    <li id="CHF"><img class="flagImg" src="images/swi_img.png" alt="스위스 국기이미지"/>스위스 CHF</li>
+                    <li id="VND"><img class="flagImg" src="images/vtm_img.png" alt="베트남 국기이미지"/>베트남 VND</li>
+                </ul>
+            </div>
+            <div class="inputWrap">
+                <input type="text" class="amountBox" id="toInput" onkeyup="convert('to')" placeholder="금액을 입력하세요"/>
+                <div id="toNumToKorea" class="inputTxt">원</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapBg"></div>
+    <script src="main.js"></script>
+</body>
+</html>
